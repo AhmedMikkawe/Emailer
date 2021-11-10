@@ -1,0 +1,170 @@
+@font-face {
+  font-family: urbanRoundedBold;
+  src: url(../webfonts/Urbane_Rounded_Bold.otf);
+}
+@font-face {
+  font-family: urbanRoundedMedium;
+  src: url(../webfonts/Urbane_Rounded_Medium.otf);
+}
+@font-face {
+  font-family: urbanRoundedLight;
+  src: url(../webfonts/Urbane_Rounded_Light.otf);
+}
+:root {
+  --background-primary-color: #280435;
+  --background-secondary-color: #b8de00;
+  --background-third-color: #6e21cc;
+}
+body {
+  background-color: var(--background-primary-color);
+  font-family: "urbanRoundedMedium", sans-serif;
+}
+.header {
+  background-image: url("/images/header-image.png");
+  background-size: cover;
+  min-height: 100vh;
+}
+.header-paragraph p {
+  font-size: 4rem;
+  color: white;
+}
+.promo-code {
+  background-color: var(--background-secondary-color);
+}
+.meal-plans-heading-container {
+  margin-top: -32%;
+}
+.meal-plans-heading {
+  margin-top: 42%;
+  margin-bottom: 40px;
+}
+.meal-plans h2 {
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+.phones {
+  margin-top: 10%;
+  position: relative;
+}
+
+.phones img:first-child {
+  position: relative;
+  left: 10%;
+}
+.phones img:last-child {
+  position: relative;
+  left: -10%;
+}
+.phones img.middle {
+  position: relative;
+  z-index: 2;
+  transform: scale(1.2);
+}
+
+.reach-goal-heading {
+  font-size: 2.5rem;
+}
+.app-integrations {
+  margin-left: 2rem;
+}
+
+.integration-phone {
+  margin-top: -20%;
+}
+.order {
+  background-color: white;
+  margin-top: -200px;
+  padding-top: 80px;
+}
+.order-category {
+  min-height: 627px;
+}
+.order h2 {
+  font-size: 2.5rem;
+}
+.meals-header {
+  background-color: var(--background-third-color);
+  width: 80%;
+  margin: auto;
+  border-radius: 20px 20px 0 0;
+}
+.meal {
+  background-color: var(--background-primary-color);
+  margin-top: -5%;
+  margin-bottom: 10px;
+  border-radius: 30px;
+}
+.meal-secondary-color {
+  color: var(--background-secondary-color);
+  position: relative;
+}
+.meal .old-number {
+  font-size: 3rem;
+}
+.meal .old-number::after {
+  content: "";
+  width: 98px;
+  position: absolute;
+  right: -9px;
+  top: 37px;
+  height: 2px;
+  transform: rotate(335deg);
+  background-color: white;
+}
+.meal .new-number {
+  font-size: 4rem;
+}
+.meal hr {
+  color: var(--background-third-color);
+  height: 2px;
+}
+
+.promo {
+  margin: 40px auto;
+}
+.promo h4 {
+  padding-bottom: 40px;
+}
+.footer-color {
+  color: #fa0578;
+}
+@media screen and (max-width: 576px) {
+  .navbar .container {
+    justify-content: center;
+    flex-direction: column;
+  }
+  .header {
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+    min-height: 37vh;
+  }
+  .header-paragraph {
+    margin-top: 1rem !important;
+  }
+  .header-paragraph p {
+    font-size: 2rem;
+  }
+  .dubai {
+    margin: auto;
+  }
+  .meal-plans h2 {
+    font-size: 1.5rem;
+  }
+  .reach-goal-heading {
+    font-size: 2rem;
+  }
+  .app-integrations {
+    margin-left: 0;
+  }
+  .integration-phone {
+    margin-top: 0;
+    margin-left: -25px;
+  }
+  .order h2 {
+    font-size: 1.5rem;
+  }
+  .order-category-width {
+    width: 90%;
+  }
+}
