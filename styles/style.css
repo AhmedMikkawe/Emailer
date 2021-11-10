@@ -20,7 +20,7 @@ body {
   font-family: "urbanRoundedMedium", sans-serif;
 }
 .header {
-  background-image: url("/images/header-image.png");
+  background-image: url("../images/header-image.png");
   background-size: cover;
   min-height: 100vh;
 }
